@@ -45,13 +45,13 @@ termux-setup-storage
 ​সব প্যাকেজ ইনস্টল হয়ে গেলে টুলটি ক্লোন করে রান করার জন্য নিচের কমান্ডগুলো দিন:
 
 # ১. রিপোজিটরিটি ক্লোন করুন
-git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
+git clone https://github.com/RanaCoding-cs/--.git
 
 # ২. টুলস ফোল্ডারে প্রবেশ করুন
 cd YOUR-REPO-NAME
 
 # ৩. স্ক্রিপ্টটি রান করুন
-python termux_tts.py
+python tts_pro.py
 
 ⚠️ জরুরি নোট (Important Note)
 ​ইন্টারনেট কানেকশন: এই স্ক্রিপ্টটি কাজ করার জন্য আপনার ফোনে অবশ্যই ইন্টারনেট চালু থাকতে হবে, কারণ এটি গুগলের অনলাইন সার্ভার ব্যবহার করে অ디오 তৈরি করে।

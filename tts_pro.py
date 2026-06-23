@@ -18,18 +18,18 @@ def clear_screen():
 def show_banner():
     clear_screen()
     print(CYAN + BOLD + """
- █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
- █████████╗████████╗███████╗   ██████╗  ██████╗ █
- █╚══██╔══╝╚══██╔══╝██╔════╝   ██╔══██╗██╔═══██╗█
- █   ██║      ██║   ███████╗   ██████╔╝██║   ██║█
- █   ██║      ██║   ╚════██║   ██╔═══╝ ██║   ██║█
- █   ██║      ██║   ███████║   ██║     ╚██████╔╝█
- █   ╚═╝      ╚═╝   ╚══════╝   ╚═╝      ╚═════╝ █
- █        [ TEXT TO SPEECH ADVANCED TOOL ]      █
- █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+ █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+ █               ████████╗████████╗███████╗              █
+ █               ╚══██╔══╝╚══██╔══╝██╔════╝              █
+ █                  ██║      ██║   ███████╗              █
+ █                  ██║      ██║   ╚════██║              █
+ █                  ██║      ██║   ███████║              █
+ █                  ╚═╝      ╚═╝   ╚══════╝              █
+ █             [ TEXT TO SPEECH ADVANCED TOOL ]          █
+ █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
     """ + RESET)
-    print(YELLOW + "      Developed for Termux | Version 2.0" + RESET)
-    print("-" * 53)
+    print(YELLOW + "          Developed for RanaCoding | Version 2.0" + RESET)
+    print("-" * 58)
 
 def loading_animation():
     animation = [
@@ -68,7 +68,7 @@ def main():
         return
 
     # ফাইলের নাম ইনপুট নেওয়া
-    print("\n" + "-" * 53)
+    print("\n" + "-" * 58)
     print(GREEN + " 💾 অডিও ফাইলের একটি নাম দাও (যেমন: myaudio)" + RESET)
     file_name = input(CYAN + " ❯ " + RESET).strip()
     
@@ -79,7 +79,7 @@ def main():
     if not file_name.endswith('.mp3'):
         file_name += '.mp3'
         
-    save_path = f"/sdcard/Download/{file_name}"
+    save_path = f"/sdcard/{file_name}"
     
     try:
         # প্রোগ্রেস বার দেখানো
@@ -91,7 +91,7 @@ def main():
         
         print(GREEN + BOLD + " ⚡ সফলভাবে সম্পন্ন হয়েছে!" + RESET)
         print(WHITE + f" 📂 ফাইলটি সেভ হয়েছে: " + YELLOW + f"Internal Storage -> Download -> {file_name}" + RESET)
-        print("-" * 53 + "\n")
+        print("-" * 58 + "\n")
         
     except Exception as e:
         print(RED + f"\n ❌ একটি সমস্যা হয়েছে: {e}" + RESET)
